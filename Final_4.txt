@@ -1,0 +1,12 @@
+import Book1
+from std_srvs.srv import Empty
+from Book1 import ServiceException
+
+def handle_service_request(request):
+    Book1.loginfo("Hi, My name is <Thawon Kaiboot>")
+    return EmptyResponse()  
+
+if __name__ == "__main__":
+    Book1.init_node("final_server")  
+    Book1.Service("/hi", Empty, handle_service_request)  
+    Book1.spin() 

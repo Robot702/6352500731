@@ -1,0 +1,5 @@
+Directory
+mkdir <ชื่อ Directory>
+
+file เปล่าชื่อ ROBOT_CLASS.txt
+touch ROBOT_CLASS.txt
